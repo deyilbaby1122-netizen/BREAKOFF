@@ -3,7 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     workerThreads: false,
-    cpus: 1,
   },
   typescript: {
     ignoreBuildErrors: true,
@@ -12,6 +11,7 @@ const nextConfig = {
     dirs: [],
     ignoreDuringBuilds: true,
   },
+  swcMinify: false,
 };
 
 module.exports = nextConfig;
